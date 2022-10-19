@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Browsing history</title>
+</head>
+<body>
+    <h1 style="position: relative;display:flex;justify-content:center;text-align:center;">Browsing History</h1>
+
+    <div class="container" style="position:relative;display:flex;justify-content:center;align-items:center;top:100px;">
+      <div class="form-group">
+          <label>Enter URL..</label>
+          <input type="text" id="url">
+      </div>&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-primary" onclick="getUrl()">Search</button>&nbsp;
+      <button class="btn btn-secondary" onclick="retrieveUrl()">View History</button>
+ 
+
+    </div>
+    <table style="position:relative;align-items:center;top:180px;left: 45%;">
+
+        <thead>
+            <th class="cols">Url Visited</th>
+        </thead>
+        <tbody id="data">
+            
+        </tbody>
+    </table>
+
+
+    
+     
+    
+</body>
+<script src="browsing_his.js"></script>
+</html>
